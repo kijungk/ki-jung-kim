@@ -27,12 +27,17 @@ body {
   padding-bottom: 120px;
 }
 
+// Icon
 .icon {
   cursor: pointer;
 }
 
 .icon-display-half {
   transform: scale(0.7);
+}
+
+.icon-display-double {
+  transform: scale(2);
 }
 
 // Text
