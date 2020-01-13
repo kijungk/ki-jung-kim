@@ -1,0 +1,35 @@
+#about {
+  .profile-picture {
+    position: relative;
+
+    height: 320px;
+    width: 320px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 110%;
+
+      padding-bottom: 110%;
+
+      box-shadow: inset 0px 0px 10px 40px #242322;
+
+      border-radius: 50%;
+    }
+
+    img {
+      height: 320px;
+      width: 320px;
+
+      border-radius: 50%;
+
+      object-fit: cover;
+      object-position: -16px 12px;
+    }
+  }
+}
