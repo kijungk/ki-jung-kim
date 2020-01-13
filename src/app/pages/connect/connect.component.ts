@@ -12,4 +12,22 @@ export class ConnectComponent implements OnInit {
   ngOnInit() {
     this.iconService.registerCustomIcons();
   }
+
+  private openTab(platform: string): void {
+    switch (platform) {
+      case "mail":
+        window.open("mailTo:kimkijung@icloud.com");
+        break;
+
+      case "linkedin":
+        window.open("https://linkedin.com/in/kimkijung");
+        break;
+
+      case "github":
+        window.open("https://github.com/kijungk");
+        break;
+    }
+
+    return;
+  }
 }
