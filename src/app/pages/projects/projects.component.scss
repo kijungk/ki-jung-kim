@@ -1,0 +1,42 @@
+#projects {
+  .last {
+    margin-bottom: 0 !important;
+  }
+
+  .icon-background {
+    position: relative;
+
+    height: 72px;
+    width: 72px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    margin: 12px;
+
+    filter: grayscale(90%);
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 110%;
+
+      padding-bottom: 110%;
+
+      box-shadow: inset 0px 0px 4px 4px #242322;
+
+      border-radius: 50%;
+    }
+
+    &:hover {
+      filter: grayscale(0);
+      box-shadow: 0 0 4px 4px white;
+    }
+  }
+}

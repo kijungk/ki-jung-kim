@@ -1,3 +1,52 @@
-<div class="page" id="projects">
-  CONTENT
+<div class="page" id="projects" fxLayout>
+  <div fxFlex="1 10 30" fxFlex.lt-sm="1 10 10"></div>
+  <div
+    class="color-white"
+    fxLayout="column"
+    fxLayoutGap="80px"
+    fxFlex="1 1 40"
+    fxFlex.lt-sm="1 1 80"
+  >
+    <div
+      fxLayout="column"
+      fxLayoutGap="20px"
+      *ngFor="let project of projects; last as isLast"
+      [ngClass]="{ last: isLast }"
+    >
+      <div
+        class="font-24 font-bold"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in"
+      >
+        {{ project.name }}
+      </div>
+      <div
+        class="text-indent"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in"
+      >
+        {{ project.description }}
+      </div>
+      <div fxLayout="row wrap" fxLayoutAlign="center center">
+        <div
+          class="icon-background"
+          fxLayout
+          fxLayoutAlign="center center"
+          *ngFor="let skill of project.stack"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in"
+        >
+          <mat-icon
+            class="icon icon-display-double"
+            svgIcon="{{ skill.icon }}"
+          ></mat-icon>
+        </div>
+      </div>
+    </div>
+
+    <div fxFlex="1 10 30" fxFlex.lt-sm="1 10 10"></div>
+  </div>
 </div>
