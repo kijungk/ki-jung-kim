@@ -16,7 +16,7 @@ export class FooterComponent implements OnInit {
   private openTab(framework: string): void {
     switch (framework) {
       case "angular":
-        window.open("https://angular.io");
+        window.open("https://github.com/kijungk/ki-jung-kim");
         break;
     }
 
