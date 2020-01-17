@@ -1,0 +1,55 @@
+<div class="page" id="connect" fxLayout>
+  <div fxFlex="1 10 30" fxFlex.lt-sm="1 10 10"></div>
+  <div
+    class="color-white"
+    fxLayout="column"
+    fxLayoutGap="40px"
+    fxFlex="1 1 40"
+    fxFlex.lt-sm="1 1 80"
+  >
+    <div
+      class="text-indent"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in"
+    >
+      Feel free to connect with me! I would love to hear from you. I'm a strong
+      believer that my network is my net worth: If you liked this website, or
+      hated it, or anywhere inbetween, feel free to tell me all about it! You
+      can reach me at any of the following platforms.
+    </div>
+    <div fxLayout fxLayoutAlign="center center" fxLayoutGap="24px">
+      <div
+        class="circle-border icon"
+        fxLayout
+        fxLayoutAlign="center center"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        (click)="openTab('mail')"
+      >
+        <mat-icon class="icon-display-double">mail</mat-icon>
+      </div>
+      <div
+        class="circle-border icon"
+        fxLayout
+        fxLayoutAlign="center center"
+        data-aos="fade-up"
+        data-aos-duration="1300"
+        (click)="openTab('linkedin')"
+      >
+        <mat-icon class="icon-display-double" svgIcon="linkedin"></mat-icon>
+      </div>
+      <div
+        class="circle-border icon"
+        fxLayout
+        fxLayoutAlign="center center"
+        data-aos="fade-up"
+        data-aos-duration="1600"
+        (click)="openTab('github')"
+      >
+        <mat-icon class="icon-display-double" svgIcon="github"></mat-icon>
+      </div>
+    </div>
+  </div>
+  <div fxFlex="1 10 30" fxFlex.lt-sm="1 10 10"></div>
+</div>
