@@ -5,23 +5,31 @@ import { Injectable } from "@angular/core";
 @Injectable()
 export class IconService {
   private icons: string[] = [
+    "adobexd",
     "angular",
     "css3",
     "dotnet",
     "express",
     "facebook",
     "github",
+    "heroku",
     "html5",
     "jasmine",
     "javascript",
     "jest",
     "linkedin",
+    "material",
     "mssql",
     "nodejs",
     "oracle",
     "postgresql",
     "python",
-    "vue"
+    "quasar",
+    "react",
+    "redux",
+    "scss",
+    "vue",
+    "vuetify"
   ];
 
   private basePath = "../../assets/icons/";
