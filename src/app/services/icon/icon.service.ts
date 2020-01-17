@@ -32,7 +32,7 @@ export class IconService {
     "vuetify"
   ];
 
-  private basePath = "./assets/icons/";
+  private basePath = "assets/icons/";
 
   constructor(
     private matIconRegistry: MatIconRegistry,
@@ -40,7 +40,6 @@ export class IconService {
   ) {}
 
   public registerCustomIcons(): void {
-    console.log(this.basePath);
     this.icons.forEach(icon => {
       this.matIconRegistry.addSvgIcon(
         icon,
