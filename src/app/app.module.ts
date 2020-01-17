@@ -14,8 +14,10 @@ import { SkillsetComponent } from "./pages/skillset/skillset.component";
 import { ProjectsComponent } from "./pages/projects/projects.component";
 import { ConnectComponent } from "./pages/connect/connect.component";
 import { FooterComponent } from "./components/footer/footer.component";
+import { SkillComponent } from "./dialogs/skill/skill.component";
 
 import { IconService } from "./services/icon/icon.service";
+import { SkillService } from "./services/skill/skill.service";
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { IconService } from "./services/icon/icon.service";
     SkillsetComponent,
     ProjectsComponent,
     ConnectComponent,
-    FooterComponent
+    FooterComponent,
+    SkillComponent
   ],
   imports: [
     AppRoutingModule,
@@ -36,7 +39,8 @@ import { IconService } from "./services/icon/icon.service";
     HttpClientModule,
     MaterialModule
   ],
-  providers: [IconService],
+  entryComponents: [SkillComponent],
+  providers: [IconService, SkillService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
