@@ -1,0 +1,40 @@
+<div
+  class="font-bold"
+  id="skill"
+  mat-dialog-title
+  fxLayout
+  fxLayoutAlign="start center"
+  fxLayoutGap="16px"
+>
+  <mat-icon class="icon-display-one-half" svgIcon="{{ data.icon }}"></mat-icon>
+  <div>
+    {{ data.name }}
+  </div>
+</div>
+<mat-dialog-content fxLayout="column" fxLayoutGap="40px">
+  <div fxLayout="column" fxLayoutGap="12px">
+    <div>Proficiency</div>
+    <div fxLayout fxLayoutGap="2px">
+      <div class="level"></div>
+      <div class="level"></div>
+      <div class="level"></div>
+      <div class="level"></div>
+      <div class="level"></div>
+      <div class="level"></div>
+      <div class="level"></div>
+      <div class="level"></div>
+      <div class="level"></div>
+      <div class="level"></div>
+    </div>
+  </div>
+  <div class="text-indent">
+    {{ data.description }}
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <div fxFlex></div>
+  <button mat-button color="warn" (click)="closeDialog()">Close</button>
+  <button mat-button color="primary" raised (click)="openTab(data.url)">
+    Visit Official Page
+  </button>
+</mat-dialog-actions>
