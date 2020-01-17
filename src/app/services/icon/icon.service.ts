@@ -40,6 +40,7 @@ export class IconService {
   ) {}
 
   public registerCustomIcons(): void {
+    console.log(this.basePath);
     this.icons.forEach(icon => {
       this.matIconRegistry.addSvgIcon(
         icon,
