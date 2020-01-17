@@ -1,3 +1,103 @@
-<div class="page" id="skillset">
-  CONTENT
+<div class="page" id="skillset" fxLayout>
+  <div fxFlex="1 10 30" fxFlex.lt-sm="1 10 10"></div>
+  <div
+    class="color-white"
+    fxLayout="column"
+    fxLayoutAlign="center center"
+    fxLayoutGap="80px"
+    fxFlex="1 1 40"
+    fxFlex.lt-sm="1 1 80"
+  >
+    <div fxLayout="column" fxLayoutGap="80px">
+      <div fxLayout="column" fxLayoutGap="20px">
+        <div class="font-24 font-bold">
+          Frontend
+        </div>
+        <div fxLayout="row wrap" fxLayoutGap="12px">
+          <div
+            class="icon-background"
+            fxLayout
+            fxLayoutAlign="center center"
+            *ngFor="let skill of frontendSkillset"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in"
+            (click)="openDialog(skill)"
+          >
+            <mat-icon
+              class="icon icon-display-double"
+              svgIcon="{{ skill.icon }}"
+            ></mat-icon>
+          </div>
+        </div>
+      </div>
+      <div fxLayout="column" fxLayoutGap="20px">
+        <div class="font-24 font-bold">
+          Backend
+        </div>
+        <div fxLayout="row wrap" fxLayoutGap="12px">
+          <div
+            class="icon-background"
+            fxLayout
+            fxLayoutAlign="center center"
+            *ngFor="let skill of backendSkillset"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in"
+            (click)="openDialog(skill)"
+          >
+            <mat-icon
+              class="icon icon-display-double"
+              svgIcon="{{ skill.icon }}"
+            ></mat-icon>
+          </div>
+        </div>
+      </div>
+      <div fxLayout="column" fxLayoutGap="20px">
+        <div class="font-24 font-bold">
+          Testing
+        </div>
+        <div fxLayout="row wrap" fxLayoutGap="12px">
+          <div
+            class="icon-background"
+            fxLayout
+            fxLayoutAlign="center center"
+            *ngFor="let skill of testingSkillset"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in"
+            (click)="openDialog(skill)"
+          >
+            <mat-icon
+              class="icon icon-display-double"
+              svgIcon="{{ skill.icon }}"
+            ></mat-icon>
+          </div>
+        </div>
+      </div>
+      <div fxLayout="column" fxLayoutGap="20px">
+        <div class="font-24 font-bold">
+          Other
+        </div>
+        <div fxLayout="row wrap" fxLayoutGap="12px">
+          <div
+            class="icon-background"
+            fxLayout
+            fxLayoutAlign="center center"
+            *ngFor="let skill of otherSkillset"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in"
+            (click)="openDialog(skill)"
+          >
+            <mat-icon
+              class="icon icon-display-double"
+              svgIcon="{{ skill.icon }}"
+            ></mat-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div fxFlex="1 10 30" fxFlex.lt-sm="1 10 10"></div>
 </div>
