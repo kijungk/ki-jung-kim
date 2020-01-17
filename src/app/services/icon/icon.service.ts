@@ -32,7 +32,7 @@ export class IconService {
     "vuetify"
   ];
 
-  private basePath = "./assets/icons/";
+  private basePath = "ki-jung-kim/assets/icons/";
 
   constructor(
     private matIconRegistry: MatIconRegistry,
