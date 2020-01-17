@@ -13,7 +13,7 @@ export class ConnectComponent implements OnInit {
     this.iconService.registerCustomIcons();
   }
 
-  private openTab(platform: string): void {
+  public openTab(platform: string): void {
     switch (platform) {
       case "mail":
         window.open("mailTo:kimkijung@icloud.com");

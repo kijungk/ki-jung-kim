@@ -13,7 +13,7 @@ export class FooterComponent implements OnInit {
     this.iconService.registerCustomIcons();
   }
 
-  private openTab(framework: string): void {
+  public openTab(framework: string): void {
     switch (framework) {
       case "angular":
         window.open("https://github.com/kijungk/ki-jung-kim");

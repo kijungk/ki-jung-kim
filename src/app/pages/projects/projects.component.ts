@@ -12,7 +12,7 @@ import { SkillComponent } from "src/app/dialogs/skill/skill.component";
   styleUrls: ["./projects.component.scss"]
 })
 export class ProjectsComponent implements OnInit {
-  private projects: Array<Project> = new Array<Project>();
+  public projects: Array<Project> = new Array<Project>();
 
   constructor(
     public dialog: MatDialog,
@@ -25,7 +25,7 @@ export class ProjectsComponent implements OnInit {
     this.initializeProjects(this.projects);
   }
 
-  private openDialog(skill: Skill): void {
+  public openDialog(skill: Skill): void {
     const dialogReference = this.dialog.open(SkillComponent, { data: skill });
   }
 

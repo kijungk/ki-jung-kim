@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
     AnimateOnScroll.init();
   }
 
-  private prepareOutlet(outlet: RouterOutlet): void {
+  public prepareOutlet(outlet: RouterOutlet): void {
     return (
       outlet &&
       outlet.activatedRouteData &&

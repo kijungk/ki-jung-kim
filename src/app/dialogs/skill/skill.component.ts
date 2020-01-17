@@ -30,12 +30,12 @@ export class SkillComponent implements OnInit {
     }
   }
 
-  private openTab(url: string): void {
+  public openTab(url: string): void {
     window.open(url);
     return;
   }
 
-  private closeDialog(): void {
+  public closeDialog(): void {
     this.dialogRef.close();
     return;
   }

@@ -10,10 +10,10 @@ import { SkillService } from "src/app/services/skill/skill.service";
   styleUrls: ["./skillset.component.scss"]
 })
 export class SkillsetComponent implements OnInit {
-  private frontendSkillset: Array<Skill>;
-  private backendSkillset: Array<Skill>;
-  private testingSkillset: Array<Skill>;
-  private otherSkillset: Array<Skill>;
+  public frontendSkillset: Array<Skill>;
+  public backendSkillset: Array<Skill>;
+  public testingSkillset: Array<Skill>;
+  public otherSkillset: Array<Skill>;
 
   constructor(public dialog: MatDialog, private skillService: SkillService) {}
 
@@ -40,7 +40,7 @@ export class SkillsetComponent implements OnInit {
     this.otherSkillset = this.skillService.getSkillsetByType("other");
   }
 
-  private openDialog(skill: Skill): void {
+  public openDialog(skill: Skill): void {
     const dialogReference = this.dialog.open(SkillComponent, {
       minWidth: "50%",
       maxWidth: "90%",

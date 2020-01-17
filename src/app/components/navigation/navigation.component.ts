@@ -7,7 +7,7 @@ import { Link } from "src/app/classes/link/link";
   styleUrls: ["./navigation.component.scss"]
 })
 export class NavigationComponent implements OnInit {
-  private links: Array<Link> = new Array<Link>();
+  public links: Array<Link> = new Array<Link>();
   constructor() {}
 
   ngOnInit() {
