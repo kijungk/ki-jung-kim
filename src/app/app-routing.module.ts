@@ -7,22 +7,19 @@ import { ProjectsComponent } from "./pages/projects/projects.component";
 import { ConnectComponent } from "./pages/connect/connect.component";
 
 const routes: Routes = [
-  { path: "", component: HomeComponent, data: { animation: "Home" } },
-  { path: "about", component: AboutComponent, data: { animation: "About" } },
+  { path: "", component: HomeComponent },
+  { path: "about", component: AboutComponent },
   {
     path: "skillset",
-    component: SkillsetComponent,
-    data: { animation: "Skillset" }
+    component: SkillsetComponent
   },
   {
     path: "projects",
-    component: ProjectsComponent,
-    data: { animation: "Projects" }
+    component: ProjectsComponent
   },
   {
     path: "connect",
-    component: ConnectComponent,
-    data: { animation: "Connect" }
+    component: ConnectComponent
   }
 ];
 
